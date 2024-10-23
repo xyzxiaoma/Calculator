@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+   <style>
+        
+        input[type="button"]{
+            box-sizing:border-box;
+            width: 90px;
+            height: 50px;
+            margin-left: 14px;
+            margin-top: 14px;
+            font-size:19px;
+            border-radius:10px;
+            outline:none;
+        }
+ 
+        #fText{
+            width:420px;
+            height:50px;
+            margin: auto;
+            outline:none;
+            text-align:right;
+            border-radius:5px;
+            background:white;
+            font-weight: bold;
+            padding-right:10px;
+            font-size:20px;
+            line-height: 50px;
+ 
+        }
+        #calculator{
+            border-radius:15px;
+            box-sizing: border-box;
+            margin:auto;
+            height: 520px;
+            width: 450px; ;
+            text-align:center;
+            border:1px white solid;
+            background:dimgray;
+ 
+        }
+ 
+    </style>
+</head>
+<body>
+<div id="calculator">
+    <div id="header">
+        <h1>计算器</h1>
+    </div>
+    <table>
+        <tr>
+            <div id="fText" class="fText"></div>
+        </tr>
+        <tr>
+            <td><input type="button" value="c" data-type="operation"></td>
+            <td><input type="button" value="/" data-type="operation"></td>
+            <td><input type="button" value="back" data-type="operation"></td>
+            <td><input type="button" value="%" data-type="operation"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" data-type="number"></td>
+            <td><input type="button" value="8" data-type="number"></td>
+            <td><input type="button" value="9" data-type="number"></td>
+            <td><input type="button" value="*" data-type="operation"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" data-type="number"></td>
+            <td><input type="button" value="5" data-type="number"></td>
+            <td><input type="button" value="6" data-type="number"></td>
+            <td><input type="button" value="-" data-type="operation"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" data-type="number"></td>
+            <td><input type="button" value="2" data-type="number"></td>
+            <td><input type="button" value="3" data-type="number"></td>
+            <td><input type="button" value="+" data-type="operation"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="00" data-type="number"></td>
+            <td><input type="button" value="0" data-type="number"></td>
+            <td><input type="button" value="." data-type="number"></td>
+            <td><input type="button" value="=" data-type="operation"></td>
+        </tr>
+    </table>
+</div>
+<script src="./js/index.js"></script>
+ 
+
+</body>
+</html>
